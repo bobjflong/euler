@@ -1,4 +1,6 @@
 
+-- This module contains a generator for solving Euler problem 92 using multisets in about 0.04s
+
 -- A number multiset can be considered the multiset (set incl. dupicates) of digits 1-9 over the
 -- size of the set eg.
 -- 0 0 0 0 0 0 1
@@ -9,7 +11,7 @@
 --
 -- Each of these numbers will either terminate at 89 or not.
 -- Each of these numbers will then have a number of permutations which also terminate at 89.
---
+-- We can calculate how many permutations there are for each qualifying value using multinomial coefficients
 
 module NumberMultiset where
 
