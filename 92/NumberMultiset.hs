@@ -57,13 +57,6 @@ multisetToNumber m = Data.Vector.ifoldl (\acc i val -> (10 ^ (power i) * val) + 
         power :: Int -> Int
         power i = size - i -1
 
-{-
-calculatePermutationTotal = Data.Vector.foldl (+) 0
-calculatePermutationTotal m 
-  where squared = squareDigits m
-        numberForm = multisetToNumber squared
--}
-
 squareTerminator :: Int -> Int
 squareTerminator x
   | x == 1 = 1
