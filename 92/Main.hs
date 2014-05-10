@@ -27,4 +27,4 @@ import Data.Maybe (fromJust)
 import Control.Monad.State
 
 main = do
-  putStrLn $ show $ runState (generateTotals 6) (exampleMS, 1)
+  putStrLn $ show $ runState (generateTotals 6) (exampleMS, 0)

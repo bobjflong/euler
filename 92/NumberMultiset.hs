@@ -90,7 +90,7 @@ nextStepPermutation :: NumberMultiset -> Int -> Int -> State PermutationSumState
 nextStepPermutation m i total = do
   case nextMultiset of
     Nothing  -> return $ total
-    Just m'  -> do put (m', total + calculatePermutationTotal m)
+    Just m'  -> do put (m', total + calculatePermutationTotal m')
                    generateTotals i'
                   
   where (nextMultiset, i') = incrementNumberMultiset m i
